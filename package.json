@@ -1,7 +1,7 @@
 {
-  "name": "whitehoof-template-project",
+  "name": "fe23-advanced-js-hw05",
   "version": "1.1.0",
-  "description": "Template project",
+  "description": "fe23 HW05 Twitter",
   "main": "scripts/script.js",
   "scripts": {
     "test": "echo \"No test specified.\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whitehoof/template"
+    "url": "git+https://github.com/whitehoof/fe23-advanced-js-hw05.git"
   },
   "author": "Ed Whitehoof",
   "devDependencies": {
