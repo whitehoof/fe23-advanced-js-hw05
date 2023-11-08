@@ -1,0 +1,31 @@
+.header {
+	padding: $ui-gap-s;
+	color: $ui-text-primary;
+}
+
+.logo {
+	position: relative;
+	margin-left: $ui-gap-m;
+	
+	&__picture {
+		position: absolute;
+		left: 0;
+		transform: translateX(-100%);
+	}
+
+	&__name {
+		font-family: "Times New Roman", serif;
+		font-size: $ui-font-size-l;
+		font-weight: bold;
+		letter-spacing: -5px;
+	}
+	
+	&__slogan {
+		position: relative;
+		top: -7px;
+		margin-left: 45px;
+		
+		font-weight: bold;
+		font-size: 15px;
+	}
+}

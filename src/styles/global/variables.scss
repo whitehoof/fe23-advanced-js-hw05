@@ -1,34 +1,45 @@
 // --------------------- COLORS
 
-$ui-text-primary:      black;
+$ui-text-primary: #000;
+$ui-bg-primary: #999;
 
-
+$ui-text-card: #ccc;
+$ui-text-card-accent: #fff;
+$ui-bg-card: #000;
 
 
 // --------------------- SIZES
+$ui-gap-s: 0.62em;
+$ui-gap-m: 1.24em;
+$ui-gap-l: 1.62em;
+
+$ui-font-size-xs: 0.9em;
+$ui-font-size-s: 1em;
+$ui-font-size-m: 1.25em;
+$ui-font-size-l: 60px;
 
 
 
 
 // --------------------- BREAKPOINTS
 
-$ui-breakpoint-xxl:		"1400px"; //max-width
-$ui-breakpoint-xxl-min:	"1401px"; // min-width
+$ui-breakpoint-xxl:		1400px; //max-width
+$ui-breakpoint-xxl-min:	1401px; // min-width
 
-$ui-breakpoint-xl:		"1200px";
-$ui-breakpoint-xl-min:	"1201px";
+$ui-breakpoint-xl:		1200px;
+$ui-breakpoint-xl-min:	1201px;
 
-$ui-breakpoint-l:		"992px";
-$ui-breakpoint-l-min:	"993px";
+$ui-breakpoint-l:		992px;
+$ui-breakpoint-l-min:	993px;
 
-$ui-breakpoint-m:		"768px";
-$ui-breakpoint-m-min:	"769px";
+$ui-breakpoint-m:		768px;
+$ui-breakpoint-m-min:	769px;
 
-$ui-breakpoint-s:		"576px";
-$ui-breakpoint-s-min:	"577px";
+$ui-breakpoint-s:		576px;
+$ui-breakpoint-s-min:	577px;
 
-$ui-breakpoint-xs:		"480px";
-$ui-breakpoint-xs-min:	"481px";
+$ui-breakpoint-xs:		480px;
+$ui-breakpoint-xs-min:	481px;
 
 
 

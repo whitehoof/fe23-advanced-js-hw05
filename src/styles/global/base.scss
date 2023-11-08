@@ -1,3 +1,9 @@
-//------------- MISC GLOBAL STYLES: 
+body {
+	background:	linear-gradient(165deg, rgb(100,200,255), rgb(255,160,255));
+}
 
-
+.container {
+	padding: 0 $ui-gap-m;
+	margin: 0 auto;
+	max-width: $ui-breakpoint-s;
+}

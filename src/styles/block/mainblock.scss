@@ -1,0 +1,55 @@
+.mainblock {
+	font-family: Helvetica, Arial, sans-serif;
+	//background-color: $ui-bg-primary;
+	color: $ui-text-primary;
+}
+
+.card {
+	margin: $ui-gap-s $ui-gap-m;
+	padding: $ui-gap-s;
+	border-radius: $ui-gap-s;
+	//max-width: $ui-breakpoint-s;
+	
+	background-color: $ui-bg-card;
+	color: $ui-text-card;
+	
+	&__header,
+	&__header--author,
+	&__header--buttons {
+		display: flex;
+		gap: $ui-gap-s;
+	}
+	
+	&__header {
+		justify-content: space-between;
+		margin-bottom: $ui-gap-m;
+		font-size: $ui-font-size-xs;
+		
+		&--author {
+			
+			&_name {
+				color: $ui-text-card-accent;
+			}
+			
+			&_email a {
+				color: dodgerblue;
+				text-decoration: none;
+			}
+		}
+	}
+	
+	&__title {
+		margin-bottom: $ui-gap-s;
+		font-size: $ui-font-size-m;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $ui-text-card-accent;
+	}
+	
+	&__text {
+		font-weight: 100;
+		font-size: $ui-font-size-xs;
+		line-height: 1.2;
+		
+	}
+}

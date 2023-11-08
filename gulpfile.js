@@ -17,25 +17,27 @@ const html = () => {
 	return gulp.src('./src/*.html')						// take all html files from source folder
 		.pipe(htmlmin({ collapseWhitespace: true }))	// minify the html
 		.pipe(gulp.dest('./dist'))						// put them into the destination folder
-	;
+		;
 };
 
 const js = () => {
 	return gulp.src('./src/scripts/**/*.js')			// take all .js from all these folders
 		.pipe(concat('script.js'))						// concatenate them into one file
+		/*
 		.pipe(minify({									// minify the result
 			ext:{
-				// src:'.js',								// full-size file naming
+				src:'.js',								// full-size file naming
 				min:'.min.js'							// minified file naming
 		},
-		noSource: true									// "true" means "don't output source files in the destination folder"
+		noSource: false									// "true" means "don't output source files in the destination folder"
 		}))
+		*/
 		.pipe(gulp.dest('./dist/scripts'))              // put .js and .min.js into the destination folder
-	;
+		;
 };
 
 const css = () => {
-	return gulp.src('./src/styles/main.scss')  				// take main.scss (where all the imports are written)
+	return gulp.src('./src/styles/mainblock.scss')  				// take mainblock.scss (where all the imports are written)
 		.pipe(sass().on('error', sass.logError))			// make computer understand sass/scss
 		.pipe(autoprefixer({								// apply Autoprefixer
 			cascade: false									// don't let Autoprefixer cascade prefixes (because whitespace will be minified anyway)
