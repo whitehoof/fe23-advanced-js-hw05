@@ -7,6 +7,7 @@
 //********************* global
 @import "global/reset";
 @import "global/fonts";
+@import "global/preloader";
 @import "global/variables";
 @import "global/base";
 
@@ -14,5 +15,5 @@
 
 //********************* block
 @import "block/header";
-@import "block/mainblock";
+@import "block/cards";
 @import "block/footer";

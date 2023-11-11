@@ -22,7 +22,7 @@ const html = () => {
 
 const js = () => {
 	return gulp.src('./src/scripts/**/*.js')			// take all .js from all these folders
-		.pipe(concat('script.js'))						// concatenate them into one file
+		// .pipe(concat('script.js'))						// concatenate them into one file
 		/*
 		.pipe(minify({									// minify the result
 			ext:{
@@ -37,7 +37,7 @@ const js = () => {
 };
 
 const css = () => {
-	return gulp.src('./src/styles/mainblock.scss')  				// take mainblock.scss (where all the imports are written)
+	return gulp.src('./src/styles/main.scss')  				// take main.scss (where all the imports are written)
 		.pipe(sass().on('error', sass.logError))			// make computer understand sass/scss
 		.pipe(autoprefixer({								// apply Autoprefixer
 			cascade: false									// don't let Autoprefixer cascade prefixes (because whitespace will be minified anyway)

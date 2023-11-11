@@ -6,10 +6,8 @@
 
 .card {
 	margin: $ui-gap-s $ui-gap-m;
-	padding: $ui-gap-s;
+	padding: $ui-gap-l;
 	border-radius: $ui-gap-s;
-	//max-width: $ui-breakpoint-s;
-	
 	background-color: $ui-bg-card;
 	color: $ui-text-card;
 	
@@ -24,6 +22,11 @@
 		justify-content: space-between;
 		margin-bottom: $ui-gap-m;
 		font-size: $ui-font-size-xs;
+		font-weight: 100;
+		
+		&--id {
+			opacity: 0.5;
+		}
 		
 		&--author {
 			
@@ -35,6 +38,10 @@
 				color: dodgerblue;
 				text-decoration: none;
 			}
+		}
+		
+		&--button {
+			cursor: pointer;
 		}
 	}
 	
@@ -50,6 +57,7 @@
 		font-weight: 100;
 		font-size: $ui-font-size-xs;
 		line-height: 1.2;
+		color: $ui-text-card-accent;
 		
 	}
 }

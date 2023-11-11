@@ -1,0 +1,8 @@
+.footer {
+	display: none;
+	
+	& img {
+		display: block;
+		margin: $ui-gap-l auto;
+	}
+}

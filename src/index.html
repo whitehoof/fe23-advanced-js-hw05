@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="la">
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="This text may show in search engine results.">
@@ -8,7 +8,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="styles/styles.min.css">
 	
-	<script defer src="scripts/script.js"></script>
+	<script type="module" src="scripts/script.js"></script>
 	
 	<title>Quakker</title>
 
@@ -16,8 +16,8 @@
 <body>
 	<!-- block-name__elem-name--mod-name_mod-val -->
 
-	<header class="header">
-		<div class="container">
+	<header lang="en" class="header">
+		<div  translate="no" class="container notranslate">
 			<div class="logo">
 				<img class="logo__picture" alt="Quakker" src="images/logo-small.png" height="62" width="69"/>
 				<div class="logo__name">Quakker</div>
@@ -28,14 +28,17 @@
 
 	<main class="mainblock">
 		<div class="container" id="cards-container">
-
+			<div class="lds-ripple">
+				<div></div>
+				<div></div>
+			</div>
 		</div>
 	</main>
 
 	<footer class="footer">
-		<div class="container">
-			<img src="images/bugs-small.png" height="155" width="188"/>
-		</div>
+		
+			<img alt="That's all folks!" src="images/end-small.png" height="250" width="250"/>
+		
 	</footer>
 
 </body>
